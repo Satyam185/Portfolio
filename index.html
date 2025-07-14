@@ -1,0 +1,646 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satyam Rajput - Portfolio</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo">Portfolio</div>
+
+                <div class="nav-links desktop-nav">
+                    <a href="#home" class="nav-link">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#interest" class="nav-link">Interest</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+
+                <div class="nav-social desktop-nav">
+                    <a href="https://github.com/Satyam185" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/satyam-rajput-4748182b3" target="_blank"
+                        rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i data-lucide="menu" id="menuIcon"></i>
+                    <i data-lucide="x" id="closeIcon" style="display: none;"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div class="mobile-nav" id="mobileNav">
+                <a href="#home" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#interest" class="mobile-nav-link">Interest</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+                <div class="mobile-social">
+                    <a href="https://github.com/Satyam185" class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/satyam-rajput-4748182b3" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="hero-image"></div>
+            <div class="gradient-overlay"></div>
+            <div class="particles" id="particles"></div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                Hi, I'm <span class="gradient-text">Satyam Rajput</span>
+            </h1>
+            <p class="hero-subtitle">
+                Full-stack Developer & UI/UX Designer passionate about creating beautiful,
+                functional, and user-centered digital experiences.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('#contact')">
+                    Get In Touch
+                </button>
+                <button class="btn btn-secondary" onclick="downloadResume()">
+
+                    <i data-lucide="download"></i>
+                    Download Resume
+
+                </button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <i data-lucide="arrow-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About <span class="text-accent">Me</span></h2>
+                <p class="section-subtitle">
+                    I'm a passionate full-stack developer creating digital solutions that make a difference. I love
+                    turning complex problems into simple, beautiful designs.
+                </p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I am proficient in creating exceptional digital experiences through modern web technologies.
+                        My journey began with a curiosity about how things work, which led me to pursue
+                        computer science and eventually become a full-stack developer.
+                    </p>
+
+                    <p>
+                        When I'm not coding, you can find me exploring new technologies, contributing to
+                        open-source projects, or gaining knowledge from the developer community.
+                    </p>
+
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <i data-lucide="code" class="feature-icon"></i>
+                            <h3>Clean Code</h3>
+                            <p>Writing maintainable, scalable, and efficient code following best practices.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="palette" class="feature-icon"></i>
+                            <h3>Creative Design</h3>
+                            <p>Crafting beautiful and intuitive user interfaces with attention to detail.</p>
+                        </div>
+                        <div class="feature-card">
+                            <i data-lucide="zap" class="feature-icon"></i>
+                            <h3>Fast Performance</h3>
+                            <p>Optimizing applications for speed and performance across all devices.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">My <span class="text-accent">Skills</span></h2>
+                <p class="section-subtitle">
+                    Here are the technologies and tools I work with to bring ideas to life.
+                </p>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>C++</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Java</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>HTML</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>CSS</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Javasript</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Frameworks & Libraries</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>react.js</span>
+                                <span>85%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Tailwind CSS</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Node.js </span>
+                                <span>Progress</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MYSQL</span>
+                                <span>70%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="70"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="skill-category">
+                    <h3 class="category-title">Tools & Others</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>Git</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>VS Code</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>MS Office</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span>AWS</span>
+                                <span>Progress</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="50"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured <span class="text-accent">Projects</span></h2>
+                <p class="section-subtitle">
+                    Here are some of my recent projects that showcase my skills and creativity.
+                </p>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public\images\gym website.jpg" alt="Gym Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://power-gym-ashy.vercel.app/" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="https://github.com/Satyam185/Power-gym.git" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Gym Website</h3>
+                        <p>Built a modern, responsive gym website showcasing services, membership plans, and trainer
+                            details. Implemented clean UI components and interactive layout using Tailwind CSS. </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Supabase</span>
+                            <span class="tech-tag">Web3form</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public\images\chatbot.jpg" alt="Chatbot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://iq-chatbot.vercel.app/" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="https://github.com/Satyam185/IQ-Chatbot.git" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>IQ Chatbot</h3>
+                        <p>Created an intelligent chatbot interface with TypeScript, focused on natural language
+                            interaction.
+                            Styled using Tailwind CSS for a responsive and visually appealing chat UI. </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">Gemini API</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public\images\financial-management.jpg" alt="Finance Management System">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="https://github.com/Satyam185/Finance_Management_Platform.git"
+                                    class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Finance Management System</h3>
+                        <p>Designed a simple finance management tool to track income, expenses, and savings. Implemented
+                            core logic using JavaScript to handle data input and processing.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">React</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">Tailwind CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public\images\tic.jpg" alt="Tic-tac-toe">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://tic-tac-toe-woad-two-92.vercel.app/" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="https://github.com/Satyam185/Tic-tac-toe.git" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Tic-tac-toe</h3>
+                        <p>Created a two-player Tic-Tac-Toe game using HTML, CSS, JavaScript, featuring interactive UI
+                            and game logic to
+                            detect wins, draws, losses, and reset functionality.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Javascript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="public\images\portfolio.jpg" alt="Portfolio Website">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i data-lucide="external-link"></i>
+                                </a>
+                                <a href="#" class="project-link">
+                                    <i data-lucide="github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Portfolio Website</h3>
+                        <p>A responsive portfolio website with smooth animations and modern design.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">Javascript</span>
+                            <span class="tech-tag">Web3form</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interest & hobbies Section -->
+    <section id="interest" class="interest">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Interest <span class="text-accent">& Hobbies</span></h2>
+                <p class="section-subtitle">
+                    A glimpse into the passions that inspire me beyond the professional realm.
+                </p>
+            </div>
+
+            <div class="timeline">
+                <div class="timeline-line"></div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot "></div>
+                    <div class="timeline-content">
+                        <h3>Playing Vollyball</h3>
+                        <br>
+                        <ul class="timeline-description">
+                            <li>Enhances teamwork and communication skills</li>
+                            <li>Builds physical endurance and discipline</li>
+                            <li>Encourages leadership and strategic thinking in fast-paced situations</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Gaming (Strategy & Multiplayer)</h3>
+                        <br>
+                        <ul class="timeline-description">
+                            <li>Sharpens problem-solving and critical thinking abilities</li>
+                            <li>Develops decision-making skills under pressure</li>
+                            <li>Fosters collaboration and coordination through multiplayer teamwork</li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+
+                        <h3>Fitness and Healthy Lifestyle</h3>
+                        <br>
+                        <ul class="timeline-description">
+                            <li>Promotes consistency, goal-setting, and self-motivation</li>
+                            <li>Boosts mental focus and stress management</li>
+                            <li>Reflects commitment to a balanced and energetic lifestyle</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Listening to Music</h3>
+                        <br>
+                        <ul class="timeline-description">
+                            <li>Boosts creativity and emotional balance</li>
+                            <li>Helps with focus and stress relief</li>
+                            <li>Inspires mood-based productivity and reflection</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In <span class="text-accent">Touch</span></h2>
+                <p class="section-subtitle">
+                    Have a project in mind? Let's work together to create something amazing.
+                </p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-intro">
+                        <h3>Let's talk about everything!</h3>
+                        <p>Don't like forms? Send me an email. 👋</p>
+                    </div>
+
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon email">
+                                <i data-lucide="mail"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>satyamrajput0185@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon phone">
+                                <i data-lucide="phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+91 9977298257</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-method">
+                            <div class="contact-icon location">
+                                <i data-lucide="map-pin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Location</h4>
+                                <p>A-197 Anand nagar bhahodapur, Gwalior (Madhya Pradesh)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-Form" action="https://api.web3forms.com/submit"
+                        method="POST">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="hidden" name="access_key" value="e59df3f0-af91-4740-811e-4795b0c07065">
+                                <input type="hidden" name="from_name" value="My Portfolio">
+
+                                <label for="name">Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i data-lucide="send"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-social">
+                    <a href="https://github.com/Satyam185" target="_blank" rel="noopener noreferrer"
+                        class="social-link">
+                        <i data-lucide="github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/satyam-rajput-4748182b3" target="_blank"
+                        rel="noopener noreferrer" class="social-link">
+                        <i data-lucide="linkedin"></i>
+                    </a>
+
+                </div>
+
+                <div class="footer-text">
+                    <p>Made with <i data-lucide="heart" class="heart-icon"></i> by Satyam Rajput</p>
+                    <p class="copyright">© 2025 All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
