@@ -316,8 +316,8 @@ document.head.appendChild(style);
 
 function downloadResume() {
     const link = document.createElement('a');
-    link.href = 'Satyam_resume.pdf'; // Make sure the path is correct
-    link.download = 'Satyam_resume.pdf'; // You can change the file name here
+    link.href = 'Satyam_resume..pdf'; // Make sure the path is correct
+    link.download = 'Satyam_resume..pdf'; // You can change the file name here
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
