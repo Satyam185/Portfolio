@@ -128,7 +128,7 @@ export default function Navbar() {
         <div className="hidden sm:flex items-center gap-3">
           {/* Outlined Resume Pill Button */}
           <a
-            href="/Satyam_resume.pdf"
+            href="public/Satyam_Rajput.pdf"
             download="Satyam_Rajput_Resume.pdf"
             className="flex items-center gap-2 px-4 py-2 rounded-full border border-[#2A2A2A] hover:border-[#FFD60A] bg-[#141414] text-[#FFD60A] hover:text-white font-mono text-xs font-bold tracking-widest uppercase transition-all duration-200"
           >
