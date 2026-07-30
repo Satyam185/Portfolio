@@ -118,6 +118,14 @@ export default function About() {
               <div>
                 <a
                   href="#contact"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const el = document.getElementById("contact");
+                    if (el) {
+                      const offsetPosition = el.getBoundingClientRect().top + window.scrollY - 90;
+                      window.scrollTo({ top: offsetPosition, behavior: "smooth" });
+                    }
+                  }}
                   className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-[#1A1A1A] border border-[#2A2A2A] text-xs font-mono font-bold text-[#FFD60A] uppercase tracking-widest hover:bg-[#FFD60A] hover:text-black hover:border-[#FFD60A] transition-all duration-300 group"
                 >
                   GET IN TOUCH

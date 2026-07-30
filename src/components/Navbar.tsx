@@ -15,6 +15,7 @@ export default function Navbar() {
 
   const navLinks = [
     { id: "about", label: "ABOUT" },
+    { id: "skills", label: "SKILLS" },
     { id: "experience", label: "EXPERIENCE" },
     { id: "projects", label: "PROJECTS" },
     { id: "contact", label: "CONTACT" },
@@ -79,8 +80,10 @@ export default function Navbar() {
     e.preventDefault();
     const target = document.getElementById(id);
     if (target) {
+      const elementPosition = target.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY - 90;
       window.scrollTo({
-        top: target.offsetTop - 90,
+        top: offsetPosition,
         behavior: "smooth",
       });
       setMobileMenuOpen(false);
