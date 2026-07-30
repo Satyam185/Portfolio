@@ -27,7 +27,6 @@ import {
   SiGooglecloud,
   SiGit,
   SiGithub,
-  SiPostman,
   SiVercel,
   SiFigma,
   SiAntdesign,
